@@ -33,28 +33,32 @@
         <EditText
             android:id="@+id/taskInput"
             android:layout_width="251dp"
-            android:layout_height="wrap_content"
+            android:layout_height="48dp"
             android:layout_marginLeft="11dp"
             android:background="@null"
             android:hint=" New task..." />
-
         <Button
             android:id="@+id/addButton"
             android:layout_width="match_parent"
-            android:layout_height="55dp"
-            android:layout_marginStart="8dp"
+            android:layout_height="55sp"
+            android:layout_marginStart="8sp"
             android:backgroundTint="#1F3C87"
+            android:gravity="center"
             android:text="ADD"
-            android:textSize="18dp"/>
+            android:textSize="18sp" />
+
 
     </LinearLayout>
+
+
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/taskRecyclerView"
         android:layout_width="match_parent"
-        android:layout_height="5dp"
+        android:layout_height="444dp"
         android:layout_weight="1"
+        android:contentDescription="yourtask">
 
-        ></androidx.recyclerview.widget.RecyclerView>
+    </androidx.recyclerview.widget.RecyclerView>
 
     <TextView
         android:id="@+id/taskCount"

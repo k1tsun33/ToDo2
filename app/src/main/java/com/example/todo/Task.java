@@ -1,12 +1,27 @@
 package com.example.todo;
 
 public class Task {
-    private Taskname;
-    private content;
+    private String text;
+    private boolean completed;
 
-    public Task() {
+    public Task(String text, boolean completed) {
+        this.text = text;
+        this.completed = completed;
     }
 
-    public Task(String taskText, boolean b) {
+    public String getText() {
+        return text;
+    }
+
+    public void setText(String text) {
+        this.text = text;
+    }
+
+    public boolean isCompleted() {
+        return completed;
+    }
+
+    public void setCompleted(boolean completed) {
+        this.completed = completed;
     }
 }
